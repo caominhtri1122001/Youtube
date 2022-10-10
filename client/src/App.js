@@ -1,4 +1,3 @@
-import "./App.css";
 import styled, { ThemeProvider } from "styled-components";
 import Menu from "./components/Menu";
 import Navbar from "./components/Navbar";
@@ -12,7 +11,9 @@ const Main = styled.div`
     flex: 7;
     background-color: ${({ theme }) => theme.bg};
 `;
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+    padding: 22px 96px;
+`;
 
 function App() {
     const [darkMode, setDarkMode] = useState(true);
