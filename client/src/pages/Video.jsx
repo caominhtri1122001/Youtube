@@ -4,6 +4,7 @@ import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
 import ThumbDownOutlinedIcon from '@mui/icons-material/ThumbDownOutlined';
 import ReplyIcon from '@mui/icons-material/Reply';
 import SaveAltIcon from '@mui/icons-material/SaveAlt';
+import Comments from '../components/Comments';
 const Container = styled.div`
     display: flex;
     gap: 24px;
@@ -153,6 +154,8 @@ const Video = () => {
                         SUBSCRIBE
                     </Subscribe>
                 </Channel>
+                <Hr />
+                <Comments></Comments>
             </Content>
             <Recommendation>recommendation</Recommendation>
         </Container>
