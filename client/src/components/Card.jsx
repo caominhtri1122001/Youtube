@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
     width: 360px;
@@ -47,17 +48,19 @@ const Info = styled.div`
 
 const Card = () => {
     return (
-        <Container>
-            <Image src='https://img.nhandan.com.vn/Files/Images/2021/04/13/3A708284_F5B8_407D_ADC0_339DBEE-1618275907021.jpeg'/>
-            <Details>
-                <ChannelImage src='https://avatars.githubusercontent.com/u/53614632?s=400&u=c439839ff1adc191b11165ac0c26effeb36a1f67&v=4' />
-                <Texts >
-                    <Title>Test Video</Title>
-                    <ChannelName>CT Dev</ChannelName>
-                    <Info>789,098 views . 1 day ago</Info>
-                </Texts>
-            </Details>
-        </Container>
+        <Link to="/video/test" style={{textDecoration:"none"}}>
+            <Container>
+                <Image src='https://img.nhandan.com.vn/Files/Images/2021/04/13/3A708284_F5B8_407D_ADC0_339DBEE-1618275907021.jpeg'/>
+                <Details>
+                    <ChannelImage src='https://avatars.githubusercontent.com/u/53614632?s=400&u=c439839ff1adc191b11165ac0c26effeb36a1f67&v=4' />
+                    <Texts >
+                        <Title>Test Video</Title>
+                        <ChannelName>CT Dev</ChannelName>
+                        <Info>789,098 views . 1 day ago</Info>
+                    </Texts>
+                </Details>
+            </Container>
+        </Link>
     )
 }
 
