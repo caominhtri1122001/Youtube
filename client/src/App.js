@@ -35,29 +35,6 @@ function App() {
                                     <Route path=":id" element={<Video />} />
                                 </Route>
                             </Routes>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
-                            <h1>test</h1>
                         </Wrapper>
                     </Main>
                 </BrowserRouter>
