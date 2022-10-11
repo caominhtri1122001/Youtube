@@ -51,7 +51,11 @@ const Item = styled.div`
     align-items: center;
     gap: 20px;
     cursor: pointer;
-    padding: 7.5px 0px; 
+    padding: 7.5px 0px;
+    
+    &:hover {
+        background-color: ${({theme}) => theme.soft};
+    }
 `;
 
 
@@ -119,8 +123,10 @@ const Menu = ({darkMode, setDarkMode}) => {
                 <Hr/>
                 <Login>
                     Sign in to like videos, comment and subscribe.
+                    <Link to="/signin" style={{textDecoration:"none"}}>
+                        <Button><AccountCircleOutlinedIcon/>SIGN IN</Button>
+                    </Link>
                 </Login>
-                <Button><AccountCircleOutlinedIcon/>SIGN IN</Button>
                 <Hr />
                 <Title>
                     BEST OF CTTUBE
