@@ -5,6 +5,8 @@ import ThumbDownOutlinedIcon from '@mui/icons-material/ThumbDownOutlined';
 import ReplyIcon from '@mui/icons-material/Reply';
 import SaveAltIcon from '@mui/icons-material/SaveAlt';
 import Comments from '../components/Comments';
+import Card from '../components/Card';
+
 const Container = styled.div`
     display: flex;
     gap: 24px;
@@ -157,7 +159,22 @@ const Video = () => {
                 <Hr />
                 <Comments></Comments>
             </Content>
-            <Recommendation>recommendation</Recommendation>
+            <Recommendation>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+                <Card type="sm"/>
+            </Recommendation>
         </Container>
     )
 }
