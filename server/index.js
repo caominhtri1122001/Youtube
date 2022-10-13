@@ -1,6 +1,10 @@
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
+const userRoutes = require("./routes/users");
+const videoRoutes = require("./routes/videos");
+const commentRoutes = require("./routes/comments");
+
 const app = express();
 
 const connect = () => {
@@ -13,6 +17,10 @@ const connect = () => {
             throw err;
         });
 };
+
+app.use("api/users", userRoutes);
+app.use("api/videos", videoRoutes);
+app.use("api/comments", commentRoutes);
 
 app.listen(8000, () => {
     connect();
