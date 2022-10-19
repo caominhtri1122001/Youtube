@@ -43,3 +43,14 @@ const connect = () => {
     mongoose.connect(process.env.CONNECTION_STRING);
 };
 ```
+
+### Lưu ý
+
+1. Ở server.js
+
+```
+//Allow to take json file from outside
+app.use(express.json());
+```
+
+2. Ở server.js thì nhớ app.use("/api/...") phải cỏ gạch ở đầu.
