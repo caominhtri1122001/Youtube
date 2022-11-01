@@ -28,4 +28,10 @@ router.get("/random", videoController.random);
 //sub video
 router.get("/sub", verifyToken, videoController.sub);
 
+//get video by tag
+router.get("/tags", videoController.getByTag);
+
+//search video
+router.get("/search", videoController.search);
+
 module.exports = router;
